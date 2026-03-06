@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Atithi – Sironja, Sagar, Madhya Pradesh</title>
+  <meta name="description" content="Hotel Atithi – Affordable luxury stay with modern amenities and warm hospitality in Sironja, Sagar, Madhya Pradesh. Book now from ₹800/night." />
+  <meta name="keywords" content="Hotel Atithi, hotel in Sagar, budget hotel Sironja, hotel near Sanchi Milk Plant, affordable hotel Madhya Pradesh" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Crimson+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Reset & Base ─────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #3a2e1f;
+      background: #faf8f4;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+    /* ─── Color Tokens ─────────────────────────────────────────────────────── */
+    :root {
+      --gold: #c9a84c;
+      --gold-dark: #a8893a;
+      --gold-light: #e8d48a;
+      --cream: #faf8f4;
+      --cream-deep: #f0ebe0;
+      --warm-brown: #3a2e1f;
+      --charcoal: #1e1a14;
+      --text-muted: #7a6a55;
+      --border: #e0d8c8;
+      --card-bg: #fff9f2;
+      --green-wa: #25D366;
+    }
+
+    /* ─── Typography ───────────────────────────────────────────────────────── */
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.25; }
+
+    /* ─── Buttons ──────────────────────────────────────────────────────────── */
+    .btn-gold {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: linear-gradient(135deg, #b8922e 0%, #d4a843 40%, #e0b84e 55%, #d4a843 70%, #b8922e 100%);
+      background-size: 200% auto;
+      color: #1e1a14;
+      font-family: 'Crimson Pro', serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: 3px;
+      transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-gold:hover {
+      background-position: right center;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(201,168,76,0.4);
+    }
+    .btn-outline-gold {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: transparent;
+      color: var(--warm-brown);
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 13px 28px;
+      border-radius: 3px;
+      border: 1.5px solid rgba(58,46,31,0.3);
+      transition: border-color 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+    .btn-outline-gold:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-wa {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background-color: var(--green-wa);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 3px;
+      border: none;
+      transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-wa:hover { background-color: #1ebe5d; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
+    .btn-white-outline {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: transparent;
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 13px 28px;
+      border-radius: 3px;
+      border: 1.5px solid rgba(255,255,255,0.5);
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    .btn-white-outline:hover { background: rgba(255,255,255,0.12); }
+
+    /* ─── Section Commons ──────────────────────────────────────────────────── */
+    .section-eyebrow {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      margin-bottom: 14px;
+    }
+    .section-eyebrow .line { width: 40px; height: 1px; background: var(--gold); }
+    .section-eyebrow span {
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      font-family: 'Crimson Pro', serif;
+      font-weight: 500;
+    }
+    .section-eyebrow.left { justify-content: flex-start; }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      color: var(--warm-brown);
+      margin-bottom: 16px;
+    }
+    .section-title.white { color: #fff; }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(to right, var(--gold), var(--gold-light));
+      margin-top: 12px;
+      border-radius: 2px;
+    }
+    .section-title.center::after { margin-left: auto; margin-right: auto; }
+    .section-title.white::after { opacity: 0.6; }
+    .section-sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .section-sub.white { color: rgba(255,255,255,0.65); }
+    .text-center { text-align: center; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 96px 0; }
+
+    /* ─── Fade-in Animation ────────────────────────────────────────────────── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── Scrollbar ────────────────────────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f0ebe0; }
+    ::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.5); border-radius: 3px; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* NAVBAR */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      transition: all 0.4s ease;
+    }
+    #navbar.scrolled {
+      background: rgba(255,249,242,0.97);
+      box-shadow: 0 2px 20px rgba(30,26,20,0.1);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px;
+    }
+    .nav-logo { cursor: pointer; }
+    .nav-logo .logo-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700; color: var(--gold);
+      letter-spacing: 0.04em; line-height: 1.1;
+    }
+    .nav-logo .logo-sub {
+      font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(255,255,255,0.7); font-family: 'Crimson Pro', serif;
+      transition: color 0.3s;
+    }
+    #navbar.scrolled .nav-logo .logo-sub { color: var(--text-muted); }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a {
+      font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.9); transition: color 0.2s;
+      position: relative; padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 1px; background: var(--gold);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--gold); }
+    #navbar.scrolled .nav-links a { color: var(--warm-brown); }
+    #navbar.scrolled .nav-links a:hover { color: var(--gold); }
+    .nav-book { padding: 9px 20px; font-size: 0.75rem; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 6px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: #fff; border-radius: 2px; transition: all 0.3s ease;
+    }
+    #navbar.scrolled .hamburger span { background: var(--warm-brown); }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; background: rgba(250,248,244,0.98);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      padding: 8px 0 16px;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: flex; align-items: center; gap: 8px;
+      padding: 12px 24px; color: var(--warm-brown);
+      font-size: 1rem; transition: color 0.2s, background 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--gold); background: rgba(201,168,76,0.05); }
+    .mobile-menu a::before { content: '›'; color: var(--gold); font-size: 1.2rem; }
+    .mobile-book { padding: 16px 24px; }
+    .mobile-book .btn-gold { width: 100%; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* HERO */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #home {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; padding: 0;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #2c1810 0%, #4a3020 40%, #3a2518 100%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(30,26,20,0.65) 0%, rgba(30,26,20,0.45) 50%, rgba(30,26,20,0.75) 100%);
+    }
+    .hero-bg img {
+      width: 100%; height: 100%; object-fit: cover;
+      position: absolute; inset: 0;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center; max-width: 900px; padding: 0 24px;
+    }
+    .hero-eyebrow {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      margin-bottom: 24px;
+      animation: fadeUp 0.9s ease-out 0.2s both;
+    }
+    .hero-eyebrow .line { width: 48px; height: 1px; background: rgba(201,168,76,0.7); }
+    .hero-eyebrow span {
+      color: var(--gold); font-size: 0.72rem; letter-spacing: 0.35em;
+      text-transform: uppercase; font-family: 'Crimson Pro', serif;
+    }
+    .hero-h1 {
+      font-size: clamp(2.4rem, 6vw, 4.5rem); font-weight: 800;
+      color: #fff; line-height: 1.15; margin-bottom: 24px;
+      animation: fadeUp 0.9s ease-out 0.45s both;
+    }
+    .hero-h1 em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      font-size: 1.2rem; color: rgba(255,255,255,0.8);
+      max-width: 620px; margin: 0 auto 40px;
+      animation: fadeUp 0.9s ease-out 0.45s both;
+    }
+    .hero-btns {
+      display: flex; flex-wrap: wrap; gap: 14px;
+      justify-content: center; margin-bottom: 60px;
+      animation: fadeUp 0.9s ease-out 0.7s both;
+    }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px; max-width: 360px; margin: 0 auto;
+      border-top: 1px solid rgba(255,255,255,0.2); padding-top: 32px;
+      animation: fadeUp 0.9s ease-out 0.7s both;
+    }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--gold); }
+    .stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); letter-spacing: 0.08em; margin-top: 4px; }
+    .hero-scroll {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.5); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+    }
+    .hero-scroll::after {
+      content: ''; display: block; width: 1px; height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(36px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* ABOUT */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #about { background: var(--cream-deep); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px;
+      align-items: center;
+    }
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img-wrap img {
+      width: 100%; height: 480px; object-fit: cover;
+      border-radius: 3px; box-shadow: 0 20px 60px rgba(30,26,20,0.18);
+    }
+    .about-img-wrap .ring {
+      position: absolute; inset: 0;
+      border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(201,168,76,0.2);
+      pointer-events: none;
+    }
+    .about-badge {
+      position: absolute; bottom: -24px; right: -24px;
+      background: var(--gold); color: var(--charcoal);
+      padding: 18px 24px; border-radius: 3px;
+      box-shadow: 0 12px 32px rgba(201,168,76,0.4);
+    }
+    .about-badge .price { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; line-height: 1; }
+    .about-badge .price-sub { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+    .corner-tl { position: absolute; top: -12px; left: -12px; width: 44px; height: 44px; border-top: 2px solid rgba(201,168,76,0.6); border-left: 2px solid rgba(201,168,76,0.6); border-radius: 3px 0 0 0; }
+    .corner-br { position: absolute; bottom: -12px; right: -12px; width: 44px; height: 44px; border-bottom: 2px solid rgba(201,168,76,0.6); border-right: 2px solid rgba(201,168,76,0.6); border-radius: 0 0 3px 0; }
+    .about-text .section-eyebrow { justify-content: flex-start; }
+    .about-text .section-title::after { margin-left: 0; }
+    .about-text p { color: var(--text-muted); margin-bottom: 16px; }
+    .usp-list { display: flex; flex-direction: column; gap: 12px; margin: 24px 0 36px; }
+    .usp-item {
+      display: flex; align-items: center; gap: 14px;
+      color: var(--warm-brown); font-size: 1rem;
+    }
+    .usp-icon {
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(201,168,76,0.15); color: var(--gold);
+      display: flex; align-items: center; justify-content: center; font-size: 1rem;
+    }
+    .about-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* ROOMS */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #rooms { background: var(--cream); }
+    .rooms-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+    .room-card {
+      background: var(--card-bg); border-radius: 3px;
+      box-shadow: 0 4px 20px rgba(30,26,20,0.08);
+      border: 1px solid var(--border);
+      overflow: hidden; position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .room-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(30,26,20,0.15); }
+    .room-card.featured { border: 2px solid rgba(201,168,76,0.5); box-shadow: 0 8px 32px rgba(201,168,76,0.18); }
+    .room-badge {
+      position: absolute; top: 16px; right: 16px; z-index: 2;
+      background: var(--gold); color: var(--charcoal);
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 5px 10px; border-radius: 2px;
+    }
+    .room-img { position: relative; height: 210px; overflow: hidden; }
+    .room-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .room-card:hover .room-img img { transform: scale(1.06); }
+    .room-img::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 40%; background: linear-gradient(to top, rgba(30,26,20,0.4), transparent);
+    }
+    .room-body { padding: 24px; }
+    .room-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+    .room-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--warm-brown); }
+    .room-price-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold); text-align: right; }
+    .room-price-per { font-size: 0.72rem; color: var(--text-muted); text-align: right; }
+    .room-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 18px; }
+    .room-amenities { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
+    .amenity-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--cream-deep); border-radius: 2px;
+      padding: 5px 10px; font-size: 0.75rem; color: rgba(58,46,31,0.75);
+    }
+    .amenity-tag .icon { color: var(--gold); font-size: 0.85rem; }
+    .room-btn { width: 100%; padding: 13px; font-size: 0.78rem; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* AMENITIES */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #amenities { background: var(--warm-brown); position: relative; overflow: hidden; }
+    #amenities .section-eyebrow .line { background: rgba(201,168,76,0.5); }
+    #amenities .section-eyebrow span { color: rgba(201,168,76,0.85); }
+    .amenities-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .amenity-card {
+      padding: 28px 24px; border-radius: 3px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.05);
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .amenity-card:hover { background: rgba(255,255,255,0.1); border-color: rgba(201,168,76,0.3); }
+    .amenity-icon-box {
+      width: 56px; height: 56px; border-radius: 3px;
+      background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.25);
+      color: var(--gold); font-size: 1.6rem;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+      transition: background 0.3s;
+    }
+    .amenity-card:hover .amenity-icon-box { background: rgba(201,168,76,0.25); }
+    .amenity-card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 8px; }
+    .amenity-card p { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.65; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* GALLERY */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #gallery { background: var(--cream-deep); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .gallery-item {
+      position: relative; border-radius: 3px; overflow: hidden;
+      aspect-ratio: 4/3; cursor: pointer;
+    }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(20,16,12,0.85) 0%, transparent 55%);
+      opacity: 0; transition: opacity 0.35s ease;
+      display: flex; align-items: flex-end; padding: 18px 20px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-label { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.05rem; font-weight: 600; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* NEARBY ATTRACTIONS */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #attractions { background: var(--cream); }
+    .attractions-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 18px; }
+    .attraction-card {
+      background: var(--card-bg); border-radius: 3px;
+      border: 1px solid var(--border); padding: 28px 18px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .attraction-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(30,26,20,0.12); }
+    .attraction-emoji { font-size: 2.4rem; margin-bottom: 14px; }
+    .attraction-line { width: 40px; height: 1px; background: var(--gold); margin: 0 auto 12px; }
+    .attraction-name { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--warm-brown); font-size: 0.95rem; margin-bottom: 6px; line-height: 1.3; }
+    .attraction-dist { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+    .attraction-note { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* REVIEWS */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #reviews { background: var(--cream-deep); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 22px; }
+    .review-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 3px; padding: 24px;
+      display: flex; flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(30,26,20,0.1); }
+    .stars { display: flex; gap: 3px; margin-bottom: 14px; }
+    .star { color: #e0b84e; font-size: 1rem; }
+    .star.empty { color: #d4cdc0; }
+    .review-text { font-style: italic; font-size: 0.92rem; color: var(--text-muted); line-height: 1.7; flex: 1; margin-bottom: 18px; }
+    .reviewer { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .reviewer-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(201,168,76,0.2); color: var(--gold);
+      font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.88rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .reviewer-name { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--warm-brown); font-size: 0.92rem; }
+    .reviewer-date { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* BOOKING */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #booking { background: var(--warm-brown); }
+    #booking .section-eyebrow .line { background: rgba(201,168,76,0.5); }
+    #booking .section-eyebrow span { color: rgba(201,168,76,0.85); }
+    .booking-box {
+      background: var(--card-bg); border-radius: 3px;
+      padding: 48px 40px; max-width: 760px; margin: 0 auto;
+      box-shadow: 0 24px 72px rgba(20,16,12,0.3);
+    }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 22px; }
+    .form-field { display: flex; flex-direction: column; gap: 7px; }
+    .form-field label { font-weight: 600; font-size: 0.88rem; letter-spacing: 0.06em; color: var(--warm-brown); text-transform: uppercase; }
+    .form-field input,
+    .form-field select {
+      padding: 12px 14px; border: 1.5px solid var(--border);
+      border-radius: 3px; font-family: 'Crimson Pro', serif; font-size: 1rem;
+      color: var(--warm-brown); background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s; outline: none;
+    }
+    .form-field input:focus,
+    .form-field select:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,168,76,0.15); }
+    .form-field.full { grid-column: 1 / -1; }
+    .booking-submit { width: 100%; padding: 16px; font-size: 0.88rem; margin-top: 8px; border-radius: 3px; }
+    .booking-wa-divider { text-align: center; margin: 24px 0 18px; }
+    .booking-wa-divider p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px; }
+    .booking-wa { width: 100%; padding: 15px; font-size: 0.85rem; border-radius: 3px; }
+    .success-msg {
+      display: none; background: #f0faf4; border: 1px solid #86efac;
+      color: #166534; border-radius: 3px; padding: 14px 18px;
+      font-size: 0.92rem; align-items: center; gap: 10px; margin-bottom: 16px;
+    }
+    .success-msg.show { display: flex; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* CONTACT */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    #contact { background: var(--cream); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contact-items { display: flex; flex-direction: column; gap: 32px; }
+    .contact-item { display: flex; gap: 18px; }
+    .contact-icon {
+      flex-shrink: 0; width: 48px; height: 48px; border-radius: 3px;
+      background: rgba(201,168,76,0.15); color: var(--gold);
+      display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+    }
+    .contact-icon.green { background: #dcfce7; color: #16a34a; }
+    .contact-item h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--warm-brown); margin-bottom: 4px; }
+    .contact-item p, .contact-item a { font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; }
+    .contact-item a.gold-link { color: var(--gold); font-weight: 600; font-size: 1.05rem; }
+    .contact-item a.gold-link:hover { color: var(--gold-dark); }
+    .contact-item a.green-link { color: #16a34a; font-weight: 600; font-size: 1.05rem; }
+    .contact-ctas { display: flex; gap: 14px; margin-top: 16px; flex-wrap: wrap; }
+    .map-wrap {
+      height: 450px; border-radius: 3px; overflow: hidden;
+      box-shadow: 0 12px 40px rgba(30,26,20,0.12); border: 1px solid var(--border);
+    }
+    .map-wrap iframe { width: 100%; height: 100%; border: 0; }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* FOOTER */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.75); }
+    .footer-main { padding: 64px 0; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; }
+    .footer-brand .brand-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold); }
+    .footer-brand .brand-sub { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-top: 4px; margin-bottom: 18px; }
+    .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 300px; margin-bottom: 20px; }
+    .social-links { display: flex; gap: 10px; }
+    .social-link {
+      width: 36px; height: 36px; border-radius: 3px;
+      background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6);
+      display: flex; align-items: center; justify-content: center; font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s; text-decoration: none;
+    }
+    .social-link:hover { background: rgba(201,168,76,0.3); color: var(--gold); }
+    .footer-col h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: #fff; margin-bottom: 20px; letter-spacing: 0.06em; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-size: 0.88rem; color: rgba(255,255,255,0.55);
+      display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .footer-links a::before { content: '›'; color: rgba(201,168,76,0.5); }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-contact { display: flex; flex-direction: column; gap: 14px; }
+    .footer-contact-item { display: flex; gap: 10px; align-items: flex-start; }
+    .footer-contact-item .icon { color: var(--gold); font-size: 0.9rem; margin-top: 3px; }
+    .footer-contact-item .icon.green { color: #4ade80; }
+    .footer-contact-item a, .footer-contact-item span { font-size: 0.85rem; color: rgba(255,255,255,0.55); }
+    .footer-contact-item a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 18px 0;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+    }
+    .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+    .footer-bottom a { color: rgba(201,168,76,0.7); text-decoration: underline; text-underline-offset: 2px; }
+    .footer-bottom a:hover { color: var(--gold); }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* FLOATING BUTTONS */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    .float-wa {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .float-wa:hover { transform: scale(1.1); box-shadow: 0 10px 30px rgba(37,211,102,0.5); }
+    .float-call {
+      position: fixed; bottom: 24px; left: 24px; z-index: 200;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #2563eb; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; box-shadow: 0 6px 20px rgba(37,99,235,0.4);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+    .float-call:hover { transform: scale(1.1); }
+    @media (min-width: 768px) { .float-call { display: none; } }
+
+    /* ════════════════════════════════════════════════════════════════════════ */
+    /* RESPONSIVE */
+    /* ════════════════════════════════════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-img-wrap { max-width: 600px; margin: 0 auto; }
+      .rooms-grid { grid-template-columns: 1fr 1fr; }
+      .attractions-grid { grid-template-columns: repeat(3,1fr); }
+      .reviews-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 72px 0; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .rooms-grid { grid-template-columns: 1fr; }
+      .amenities-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .attractions-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .booking-box { padding: 28px 20px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; align-items: stretch; max-width: 320px; margin-left: auto; margin-right: auto; }
+    }
+    @media (max-width: 480px) {
+      .amenities-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .attractions-grid { grid-template-columns: 1fr 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .about-badge { right: -8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <div id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo" onclick="scrollTo('#home')">
+        <div class="logo-name">Hotel Atithi</div>
+        <div class="logo-sub">Sironja · Sagar</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" onclick="nav(event,'#home')">Home</a></li>
+        <li><a href="#about" onclick="nav(event,'#about')">About</a></li>
+        <li><a href="#rooms" onclick="nav(event,'#rooms')">Rooms</a></li>
+        <li><a href="#amenities" onclick="nav(event,'#amenities')">Amenities</a></li>
+        <li><a href="#gallery" onclick="nav(event,'#gallery')">Gallery</a></li>
+        <li><a href="#reviews" onclick="nav(event,'#reviews')">Reviews</a></li>
+        <li><a href="#contact" onclick="nav(event,'#contact')">Contact</a></li>
+        <li>        <button type="button" class="btn-gold nav-book" onclick="scrollTo('#booking')">Book Now</button></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="nav(event,'#home')">Home</a>
+      <a href="#about" onclick="nav(event,'#about')">About</a>
+      <a href="#rooms" onclick="nav(event,'#rooms')">Rooms</a>
+      <a href="#amenities" onclick="nav(event,'#amenities')">Amenities</a>
+      <a href="#gallery" onclick="nav(event,'#gallery')">Gallery</a>
+      <a href="#reviews" onclick="nav(event,'#reviews')">Reviews</a>
+      <a href="#contact" onclick="nav(event,'#contact')">Contact</a>
+      <div class="mobile-book"><button type="button" class="btn-gold" style="width:100%" onclick="nav(event,'#booking')">Book Now</button></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section id="home">
+    <div class="hero-bg">
+      <!-- Fallback gradient shown if no real image; replace src with your hotel photo -->
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80" alt="Hotel Atithi" onerror="this.style.display='none'" />
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="line"></span>
+        <span>Sironja &middot; Sagar &middot; Madhya Pradesh</span>
+        <span class="line"></span>
+      </div>
+      <h1 class="hero-h1">
+        Experience Comfort<br>
+        <em>and Care</em> in the<br>
+        Heart of Sagar
+      </h1>
+      <p class="hero-sub">
+        Affordable luxury stay with modern amenities and warm hospitality.
+        Your home away from home in the heart of Sironja.
+      </p>
+      <div class="hero-btns">
+        <button type="button" class="btn-gold" onclick="scrollTo('#booking')">&#128197; Book Your Stay</button>
+        <a href="tel:+918349580770" class="btn-white-outline">&#128222; Call Now</a>
+        <a href="https://wa.me/918349580770" target="_blank" class="btn-wa">&#128172; WhatsApp Booking</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">100+</div><div class="stat-label">Happy Guests</div></div>
+        <div><div class="stat-num">3</div><div class="stat-label">Room Types</div></div>
+        <div><div class="stat-num">24/7</div><div class="stat-label">Front Desk</div></div>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ══════════════════ ABOUT ══════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap fade-in">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80" alt="Hotel Atithi entrance" onerror="this.src='https://placehold.co/800x480/f0ebe0/c9a84c?text=Hotel+Atithi'" />
+          <div class="ring"></div>
+          <div class="about-badge">
+            <div class="price">&#8377;800</div>
+            <div class="price-sub">Starting Per Night</div>
+          </div>
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+        </div>
+        <div class="about-text fade-in">
+          <div class="section-eyebrow left">
+            <span class="line"></span><span>Our Story</span>
+          </div>
+          <h2 class="section-title">Welcome to<br>Hotel Atithi</h2>
+          <p>At Hotel Atithi, we believe every guest deserves a comfortable, clean, and welcoming home away from home. Located in the heart of Sironja, Sagar, our hotel combines affordability with quality hospitality.</p>
+          <p>Whether you're a traveler, family, or business visitor, we ensure your stay is nothing short of exceptional. Our dedicated staff works around the clock to make your experience memorable and comfortable.</p>
+          <ul class="usp-list">
+            <li class="usp-item"><span class="usp-icon">🛏️</span> Clean and Hygienic Rooms</li>
+            <li class="usp-item"><span class="usp-icon">⭐</span> Friendly and Attentive Staff</li>
+            <li class="usp-item"><span class="usp-icon">🌡️</span> Comfortable Beds and Linens</li>
+            <li class="usp-item"><span class="usp-icon">👨‍👩‍👧</span> Perfect for Families and Travelers</li>
+            <li class="usp-item"><span class="usp-icon">📍</span> Convenient Location Near Sanchi Milk Plant</li>
+          </ul>
+          <div class="about-actions">
+            <button type="button" class="btn-gold" onclick="scrollTo('#rooms')">View Rooms</button>
+            <a href="tel:+918349580770" class="btn-outline-gold">&#128222; Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ROOMS ══════════════════ -->
+  <section id="rooms">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <div class="section-eyebrow"><span class="line"></span><span>Accommodation</span><span class="line"></span></div>
+        <h2 class="section-title center">Our Rooms &amp; Stay Options</h2>
+        <p class="section-sub">Choose from our carefully appointed rooms, each designed to provide maximum comfort at an affordable price.</p>
+      </div>
+      <div class="rooms-grid">
+
+        <!-- Standard Room -->
+        <div class="room-card fade-in">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Standard Room" onerror="this.src='https://placehold.co/800x600/f0ebe0/c9a84c?text=Standard+Room'" />
+          </div>
+          <div class="room-body">
+            <div class="room-header">
+              <div class="room-name">Standard Room</div>
+              <div><div class="room-price-num">&#8377;800</div><div class="room-price-per">/night</div></div>
+            </div>
+            <p class="room-desc">Comfortable and clean room with essential amenities. Perfect for solo travelers and couples seeking a peaceful stay.</p>
+            <div class="room-amenities">
+              <span class="amenity-tag"><span class="icon">📶</span> Free WiFi</span>
+              <span class="amenity-tag"><span class="icon">📺</span> TV</span>
+              <span class="amenity-tag"><span class="icon">🚿</span> Hot Water</span>
+              <span class="amenity-tag"><span class="icon">🌬️</span> Fan</span>
+            </div>
+            <button type="button" class="btn-gold room-btn" onclick="selectRoom('standard')">Book Now</button>
+          </div>
+        </div>
+
+        <!-- Deluxe AC Room -->
+        <div class="room-card featured fade-in">
+          <div class="room-badge">Most Popular</div>
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="Deluxe AC Room" onerror="this.src='https://placehold.co/800x600/f0ebe0/c9a84c?text=Deluxe+AC+Room'" />
+          </div>
+          <div class="room-body">
+            <div class="room-header">
+              <div class="room-name">Deluxe AC Room</div>
+              <div><div class="room-price-num">&#8377;999</div><div class="room-price-per">/night</div></div>
+            </div>
+            <p class="room-desc">Enjoy a premium experience with air conditioning, upgraded furnishings, and extra comfort for a truly relaxing stay.</p>
+            <div class="room-amenities">
+              <span class="amenity-tag"><span class="icon">📶</span> Free WiFi</span>
+              <span class="amenity-tag"><span class="icon">❄️</span> AC</span>
+              <span class="amenity-tag"><span class="icon">📺</span> TV</span>
+              <span class="amenity-tag"><span class="icon">🚿</span> Hot Water</span>
+              <span class="amenity-tag"><span class="icon">🧊</span> Mini Fridge</span>
+            </div>
+            <button type="button" class="btn-gold room-btn" onclick="selectRoom('deluxeAc')">Book Now</button>
+          </div>
+        </div>
+
+        <!-- Family Room -->
+        <div class="room-card fade-in">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" alt="Family Room" onerror="this.src='https://placehold.co/800x600/f0ebe0/c9a84c?text=Family+Room'" />
+          </div>
+          <div class="room-body">
+            <div class="room-header">
+              <div class="room-name">Family Room</div>
+              <div><div class="room-price-num">&#8377;1,200</div><div class="room-price-per">/night</div></div>
+            </div>
+            <p class="room-desc">Spacious room designed for families with extra beds and all the comforts of home. Perfect for a memorable family stay.</p>
+            <div class="room-amenities">
+              <span class="amenity-tag"><span class="icon">📶</span> Free WiFi</span>
+              <span class="amenity-tag"><span class="icon">❄️</span> AC</span>
+              <span class="amenity-tag"><span class="icon">📺</span> TV</span>
+              <span class="amenity-tag"><span class="icon">🚿</span> Hot Water</span>
+              <span class="amenity-tag"><span class="icon">🛏️</span> Extra Beds</span>
+              <span class="amenity-tag"><span class="icon">🛋️</span> Sofa</span>
+            </div>
+            <button class="btn-gold room-btn" onclick="selectRoom('family')">Book Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ AMENITIES ══════════════════ -->
+  <section id="amenities">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <div class="section-eyebrow"><span class="line" style="background:rgba(201,168,76,0.5)"></span><span>Facilities</span><span class="line" style="background:rgba(201,168,76,0.5)"></span></div>
+        <h2 class="section-title center white">Everything You Need for a Perfect Stay</h2>
+        <p class="section-sub white">We've thought of everything to make your stay as comfortable and convenient as possible.</p>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">📶</div><h3>Free WiFi</h3><p>Stay connected with our complimentary high-speed internet access throughout the property.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">🛏️</div><h3>Comfortable Beds</h3><p>Rest easy on our premium mattresses with soft pillows and fresh linens every stay.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">🚿</div><h3>Clean Towels &amp; Toiletries</h3><p>Fresh towels and complimentary toiletries provided with every room.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">❄️</div><h3>Air Conditioning</h3><p>Beat the heat with climate-controlled rooms available in Deluxe and Family options.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">🚗</div><h3>Parking Space</h3><p>Convenient and secure free parking available for all guests on the premises.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">🕐</div><h3>24×7 Front Desk</h3><p>Our friendly staff is always available round the clock for your every need.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">🍽️</div><h3>Room Service</h3><p>Order meals and refreshments directly to your room at your convenience.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">💧</div><h3>Hot Water</h3><p>Enjoy 24-hour hot water supply for a refreshing and relaxing bath experience.</p></div>
+        <div class="amenity-card fade-in"><div class="amenity-icon-box">🥘</div><h3>Nearby Food Options</h3><p>Multiple restaurants and eateries within walking distance from the hotel.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ GALLERY ══════════════════ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <div class="section-eyebrow"><span class="line"></span><span>Gallery</span><span class="line"></span></div>
+        <h2 class="section-title center">A Glimpse of Hotel Atithi</h2>
+        <p class="section-sub">Take a visual tour of our comfortable rooms and welcoming spaces.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Hotel Exterior" onerror="this.src='https://placehold.co/800x600/3a2e1f/c9a84c?text=Hotel+Exterior'" />
+          <div class="gallery-overlay"><span class="gallery-label">Hotel Exterior</span></div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Standard Room" onerror="this.src='https://placehold.co/800x600/3a2e1f/c9a84c?text=Standard+Room'" />
+          <div class="gallery-overlay"><span class="gallery-label">Standard Room</span></div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Reception Area" onerror="this.src='https://placehold.co/800x600/3a2e1f/c9a84c?text=Reception+Area'" />
+          <div class="gallery-overlay"><span class="gallery-label">Reception Area</span></div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Modern Bathroom" onerror="this.src='https://placehold.co/800x600/3a2e1f/c9a84c?text=Modern+Bathroom'" />
+          <div class="gallery-overlay"><span class="gallery-label">Modern Bathroom</span></div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Parking Area" onerror="this.src='https://placehold.co/800x600/3a2e1f/c9a84c?text=Parking+Area'" />
+          <div class="gallery-overlay"><span class="gallery-label">Parking Area</span></div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80" alt="Local Surroundings" onerror="this.src='https://placehold.co/800x600/3a2e1f/c9a84c?text=Local+Surroundings'" />
+          <div class="gallery-overlay"><span class="gallery-label">Local Surroundings</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ NEARBY ATTRACTIONS ══════════════════ -->
+  <section id="attractions">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <div class="section-eyebrow"><span class="line"></span><span>Location</span><span class="line"></span></div>
+        <h2 class="section-title center">Conveniently Located</h2>
+        <p class="section-sub">Hotel Atithi is perfectly situated for easy access to everything Sagar has to offer.</p>
+      </div>
+      <div class="attractions-grid">
+        <div class="attraction-card fade-in">
+          <div class="attraction-emoji">🏭</div>
+          <div class="attraction-line"></div>
+          <div class="attraction-name">Sanchi Milk Plant</div>
+          <div class="attraction-dist">0.1 km</div>
+          <div class="attraction-note">Right Opposite</div>
+        </div>
+        <div class="attraction-card fade-in">
+          <div class="attraction-emoji">🏙️</div>
+          <div class="attraction-line"></div>
+          <div class="attraction-name">Sagar City Center</div>
+          <div class="attraction-dist">8 km</div>
+          <div class="attraction-note">City Hub</div>
+        </div>
+        <div class="attraction-card fade-in">
+          <div class="attraction-emoji">🍽️</div>
+          <div class="attraction-line"></div>
+          <div class="attraction-name">Local Restaurants</div>
+          <div class="attraction-dist">0.5 km</div>
+          <div class="attraction-note">Walking Distance</div>
+        </div>
+        <div class="attraction-card fade-in">
+          <div class="attraction-emoji">🚌</div>
+          <div class="attraction-line"></div>
+          <div class="attraction-name">Bus Stand</div>
+          <div class="attraction-dist">5 km</div>
+          <div class="attraction-note">Easy Commute</div>
+        </div>
+        <div class="attraction-card fade-in">
+          <div class="attraction-emoji">🚉</div>
+          <div class="attraction-line"></div>
+          <div class="attraction-name">Railway Station</div>
+          <div class="attraction-dist">7 km</div>
+          <div class="attraction-note">Sagar Junction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ REVIEWS ══════════════════ -->
+  <section id="reviews">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <div class="section-eyebrow"><span class="line"></span><span>Testimonials</span><span class="line"></span></div>
+        <h2 class="section-title center">What Our Guests Say</h2>
+        <p class="section-sub">Real experiences from our valued guests. Their satisfaction is our greatest achievement.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-in">
+          <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">"Very clean rooms and helpful staff. Great value for money. The hot water and WiFi worked perfectly. Will definitely come back on my next trip to Sagar!"</p>
+          <div class="reviewer"><div class="reviewer-avatar">RK</div><div><div class="reviewer-name">Rajesh Kumar</div><div class="reviewer-date">December 2024</div></div></div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">"Excellent hospitality! The staff was so friendly and the room was spotless. I was traveling with my family and they made us feel so welcome. Highly recommend Hotel Atithi."</p>
+          <div class="reviewer"><div class="reviewer-avatar">PS</div><div><div class="reviewer-name">Priya Sharma</div><div class="reviewer-date">November 2024</div></div></div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+          <p class="review-text">"Good location, clean bathrooms, and comfortable beds. Perfect for a short business trip. The 24/7 front desk was very helpful with local information and directions."</p>
+          <div class="reviewer"><div class="reviewer-avatar">AV</div><div><div class="reviewer-name">Amit Verma</div><div class="reviewer-date">October 2024</div></div></div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">"Best budget hotel in Sagar! Clean, affordable, and the hot water worked perfectly. The location is great — everything is nearby. 10 out of 10, I'll be back!"</p>
+          <div class="reviewer"><div class="reviewer-avatar">SP</div><div><div class="reviewer-name">Sunita Patel</div><div class="reviewer-date">September 2024</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ BOOKING ══════════════════ -->
+  <section id="booking">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:48px">
+        <div class="section-eyebrow"><span class="line" style="background:rgba(201,168,76,0.5)"></span><span>Reservations</span><span class="line" style="background:rgba(201,168,76,0.5)"></span></div>
+        <h2 class="section-title center white">Reserve Your Stay</h2>
+        <p class="section-sub white">Fill in the form below and we'll confirm your booking within the hour.</p>
+      </div>
+      <div class="booking-box fade-in">
+        <div class="success-msg" id="successMsg">
+          <span>✅</span>
+          <span>Booking request received! We'll call you within an hour to confirm your reservation.</span>
+        </div>
+        <form id="bookingForm" onsubmit="submitBooking(event)">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="checkIn">Check-in Date</label>
+              <input type="date" id="checkIn" required />
+            </div>
+            <div class="form-field">
+              <label for="checkOut">Check-out Date</label>
+              <input type="date" id="checkOut" required />
+            </div>
+            <div class="form-field">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="roomType">Room Type</label>
+              <select id="roomType" required>
+                <option value="">Select room type</option>
+                <option value="standard">Standard Room — ₹800/night</option>
+                <option value="deluxeAc">Deluxe AC Room — ₹999/night</option>
+                <option value="family">Family Room — ₹1,200/night</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+          <button type="submit" class="btn-gold booking-submit">Submit Booking Request</button>
+        </form>
+        <div class="booking-wa-divider">
+          <p>Prefer instant confirmation?</p>
+          <a href="https://wa.me/918349580770?text=Hello%20Hotel%20Atithi%2C%20I%20would%20like%20to%20book%20a%20room." target="_blank" class="btn-wa booking-wa">
+            &#128172; Book Instantly via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONTACT ══════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <div class="section-eyebrow"><span class="line"></span><span>Find Us</span><span class="line"></span></div>
+        <h2 class="section-title center">Get in Touch</h2>
+        <p class="section-sub">We're here to help. Reach out to us anytime and we'll respond promptly.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-items fade-in">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h3>Our Address</h3>
+              <p>Hotel Atithi<br>Opposite Sanchi Milk Plant<br>Sironja, Sagar<br>Madhya Pradesh — India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h3>Phone</h3>
+              <a href="tel:+918349580770" class="gold-link">+91 83495 80770</a>
+              <p style="margin-top:4px">Available 24 hours a day, 7 days a week</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon green">💬</div>
+            <div>
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/918349580770" target="_blank" class="green-link">Chat with Us</a>
+              <p style="margin-top:4px">Instant booking and queries via WhatsApp</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h3>Check-in Hours</h3>
+              <p>Check-in: 11:00 AM onwards<br>Check-out: by 10:00 AM</p>
+            </div>
+          </div>
+          <div class="contact-ctas">
+            <a href="tel:+918349580770" class="btn-gold">&#128222; Call Now</a>
+            <a href="https://wa.me/918349580770" target="_blank" class="btn-wa">&#128172; WhatsApp</a>
+          </div>
+        </div>
+        <div class="map-wrap fade-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.5!2d78.74!3d23.86!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3978c3b9b4b4b4b5%3A0x0!2sSironja%2C+Sagar%2C+Madhya+Pradesh!5e0!3m2!1sen!2sin!4v1000000000000"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Hotel Atithi Location Map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand-name">Hotel Atithi</div>
+            <div class="brand-sub">Sironja &middot; Sagar &middot; MP</div>
+            <p>Your home away from home. Comfortable, clean, and welcoming stays at affordable prices in the heart of Sironja, Sagar.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">f</a>
+              <a href="#" class="social-link" aria-label="Instagram">in</a>
+              <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+              <a href="#home" onclick="nav(event,'#home')">Home</a>
+              <a href="#about" onclick="nav(event,'#about')">About Us</a>
+              <a href="#rooms" onclick="nav(event,'#rooms')">Our Rooms</a>
+              <a href="#amenities" onclick="nav(event,'#amenities')">Amenities</a>
+              <a href="#gallery" onclick="nav(event,'#gallery')">Gallery</a>
+              <a href="#booking" onclick="nav(event,'#booking')">Book Now</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item"><span class="icon">📍</span><span>Opp. Sanchi Milk Plant,<br>Sironja, Sagar, MP</span></div>
+              <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+918349580770">+91 83495 80770</a></div>
+              <div class="footer-contact-item"><span class="icon green">💬</span><a href="https://wa.me/918349580770" target="_blank">WhatsApp Us</a></div>
+              <div class="footer-contact-item"><span class="icon">🗺️</span><a href="https://maps.google.com/?q=Sironja,Sagar,Madhya+Pradesh" target="_blank">View on Google Maps</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Hotel Atithi. All rights reserved.</p>
+        <p>Designed for Hotel Atithi, Sironja, Sagar, Madhya Pradesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════ FLOATING BUTTONS ══════════════════ -->
+  <a href="https://wa.me/918349580770" target="_blank" class="float-wa" aria-label="WhatsApp Booking">&#128172;</a>
+  <a href="tel:+918349580770" class="float-call" aria-label="Call Hotel Atithi">&#128222;</a>
+
+  <!-- ══════════════════ JAVASCRIPT ══════════════════ -->
+  <script>
+    /* ─── Year ─────────────────────────────────────────────────────────────── */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ─── Navbar scroll ────────────────────────────────────────────────────── */
+    window.addEventListener('scroll', function () {
+      const nb = document.getElementById('navbar');
+      if (window.scrollY > 60) nb.classList.add('scrolled');
+      else nb.classList.remove('scrolled');
+    }, { passive: true });
+
+    /* ─── Smooth scroll helper ─────────────────────────────────────────────── */
+    function scrollTo(id) {
+      const el = document.querySelector(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /* ─── Nav link handler ─────────────────────────────────────────────────── */
+    function nav(e, id) {
+      e.preventDefault();
+      closeMobile();
+      scrollTo(id);
+    }
+
+    /* ─── Mobile menu ──────────────────────────────────────────────────────── */
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const ham  = document.getElementById('hamburger');
+      menu.classList.toggle('open');
+      ham.classList.toggle('open');
+    }
+    function closeMobile() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    }
+
+    /* ─── Select room from room card ───────────────────────────────────────── */
+    function selectRoom(type) {
+      document.getElementById('roomType').value = type;
+      scrollTo('#booking');
+    }
+
+    /* ─── Booking form submit ──────────────────────────────────────────────── */
+    function submitBooking(e) {
+      e.preventDefault();
+      const checkIn  = document.getElementById('checkIn').value;
+      const checkOut = document.getElementById('checkOut').value;
+      const guests   = document.getElementById('guests').value;
+      const roomType = document.getElementById('roomType').value;
+      const phone    = document.getElementById('phone').value;
+
+      if (!checkIn || !checkOut || !guests || !roomType || !phone) {
+        alert('Please fill in all fields before submitting.');
+        return;
+      }
+      if (new Date(checkIn) >= new Date(checkOut)) {
+        alert('Check-out date must be after check-in date.');
+        return;
+      }
+
+      // Show success message
+      const msg = document.getElementById('successMsg');
+      msg.classList.add('show');
+      document.getElementById('bookingForm').reset();
+
+      // Also open WhatsApp with pre-filled message
+      const roomNames = { standard: 'Standard Room', deluxeAc: 'Deluxe AC Room', family: 'Family Room' };
+      const waText = encodeURIComponent(
+        'Hello Hotel Atithi,\nI would like to book a room.\n\n' +
+        'Check-in: ' + checkIn + '\nCheck-out: ' + checkOut + '\n' +
+        'Guests: ' + guests + '\nRoom: ' + (roomNames[roomType] || roomType) + '\nPhone: ' + phone
+      );
+      setTimeout(function () {
+        window.open('https://wa.me/918349580770?text=' + waText, '_blank');
+      }, 800);
+
+      // Hide message after 8 seconds
+      setTimeout(function () { msg.classList.remove('show'); }, 8000);
+    }
+
+    /* ─── Fade-in on scroll ────────────────────────────────────────────────── */
+    (function () {
+      var items = document.querySelectorAll('.fade-in');
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      items.forEach(function (el) { obs.observe(el); });
+    })();
+
+    /* ─── Set min date for check-in to today ───────────────────────────────── */
+    (function () {
+      var today = new Date().toISOString().split('T')[0];
+      document.getElementById('checkIn').min  = today;
+      document.getElementById('checkOut').min = today;
+      document.getElementById('checkIn').addEventListener('change', function () {
+        document.getElementById('checkOut').min = this.value;
+      });
+    })();
+  </script>
+
+</body>
+</html>
